@@ -16,6 +16,9 @@
 		636D1E3B20ACD597007C8234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636D1E3920ACD597007C8234 /* Main.storyboard */; };
 		636D1E3D20ACD597007C8234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636D1E3C20ACD597007C8234 /* Assets.xcassets */; };
 		636D1E4020ACD597007C8234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636D1E3E20ACD597007C8234 /* LaunchScreen.storyboard */; };
+		63BF910D20BF6E5900125E47 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF910C20BF6E5900125E47 /* Snap.swift */; };
+		63BF910F20BF75CF00125E47 /* VerSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF910E20BF75CF00125E47 /* VerSnapViewController.swift */; };
+		63E55AAB20BF4716000F7F5A /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E55AAA20BF4716000F7F5A /* Usuario.swift */; };
 		E0FA1B62C91D4506E6F21557 /* Pods_Snapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BD0BB2C546E4A414B9D9CF /* Pods_Snapchat.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,9 @@
 		636D1E3C20ACD597007C8234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		636D1E3F20ACD597007C8234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		636D1E4120ACD597007C8234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63BF910C20BF6E5900125E47 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		63BF910E20BF75CF00125E47 /* VerSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerSnapViewController.swift; sourceTree = "<group>"; };
+		63E55AAA20BF4716000F7F5A /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		83BD0BB2C546E4A414B9D9CF /* Pods_Snapchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6F482506A0A0CF94442F69 /* Pods-Snapchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat.release.xcconfig"; sourceTree = "<group>"; };
 		DE55ACE962F0AEF935310014 /* Pods-Snapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,19 +84,38 @@
 		636D1E3420ACD597007C8234 /* Snapchat */ = {
 			isa = PBXGroup;
 			children = (
+				63E55AA920BF46FA000F7F5A /* Modelos */,
+				63E55AA820BF46AD000F7F5A /* ViewControllers */,
 				633A05F520ACF9D100847D55 /* GoogleService-Info.plist */,
 				6355A0BC20ACF3700032F1A2 /* Snapchat.entitlements */,
 				636D1E3520ACD597007C8234 /* AppDelegate.swift */,
-				636D1E3720ACD597007C8234 /* iniciarSesionViewController.swift */,
 				636D1E3920ACD597007C8234 /* Main.storyboard */,
 				636D1E3C20ACD597007C8234 /* Assets.xcassets */,
 				636D1E3E20ACD597007C8234 /* LaunchScreen.storyboard */,
 				636D1E4120ACD597007C8234 /* Info.plist */,
-				633A05F720ACFB3300847D55 /* SnapsViewController.swift */,
-				633A05F920AD021400847D55 /* ImagenViewController.swift */,
-				633A05FB20AD146600847D55 /* ElegirUsuarioViewController.swift */,
 			);
 			path = Snapchat;
+			sourceTree = "<group>";
+		};
+		63E55AA820BF46AD000F7F5A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				633A05FB20AD146600847D55 /* ElegirUsuarioViewController.swift */,
+				633A05F720ACFB3300847D55 /* SnapsViewController.swift */,
+				636D1E3720ACD597007C8234 /* iniciarSesionViewController.swift */,
+				633A05F920AD021400847D55 /* ImagenViewController.swift */,
+				63BF910E20BF75CF00125E47 /* VerSnapViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63E55AA920BF46FA000F7F5A /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				63E55AAA20BF4716000F7F5A /* Usuario.swift */,
+				63BF910C20BF6E5900125E47 /* Snap.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 		D6CCA4F1FA90FA98DFCE3854 /* Pods */ = {
@@ -187,6 +212,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -194,6 +220,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -229,7 +256,10 @@
 			files = (
 				636D1E3820ACD597007C8234 /* iniciarSesionViewController.swift in Sources */,
 				633A05FA20AD021400847D55 /* ImagenViewController.swift in Sources */,
+				63E55AAB20BF4716000F7F5A /* Usuario.swift in Sources */,
 				636D1E3620ACD597007C8234 /* AppDelegate.swift in Sources */,
+				63BF910F20BF75CF00125E47 /* VerSnapViewController.swift in Sources */,
+				63BF910D20BF6E5900125E47 /* Snap.swift in Sources */,
 				633A05F820ACFB3300847D55 /* SnapsViewController.swift in Sources */,
 				633A05FC20AD146600847D55 /* ElegirUsuarioViewController.swift in Sources */,
 			);
