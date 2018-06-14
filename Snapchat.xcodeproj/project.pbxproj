@@ -16,8 +16,13 @@
 		636D1E3B20ACD597007C8234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636D1E3920ACD597007C8234 /* Main.storyboard */; };
 		636D1E3D20ACD597007C8234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636D1E3C20ACD597007C8234 /* Assets.xcassets */; };
 		636D1E4020ACD597007C8234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636D1E3E20ACD597007C8234 /* LaunchScreen.storyboard */; };
+		63AB484020D1B480004A5036 /* EsucharSnapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB483F20D1B480004A5036 /* EsucharSnapController.swift */; };
+		63AB484320D1F6A1004A5036 /* CeldaUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB484220D1F6A1004A5036 /* CeldaUsuario.swift */; };
 		63BF910D20BF6E5900125E47 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF910C20BF6E5900125E47 /* Snap.swift */; };
 		63BF910F20BF75CF00125E47 /* VerSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF910E20BF75CF00125E47 /* VerSnapViewController.swift */; };
+		63DD08F020C885E200E8063B /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DD08EF20C885E200E8063B /* Border.swift */; };
+		63DD08F220C887F200E8063B /* PopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DD08F120C887F200E8063B /* PopUpController.swift */; };
+		63DD08F420C8944500E8063B /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DD08F320C8944500E8063B /* AudioViewController.swift */; };
 		63E55AAB20BF4716000F7F5A /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E55AAA20BF4716000F7F5A /* Usuario.swift */; };
 		E0FA1B62C91D4506E6F21557 /* Pods_Snapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BD0BB2C546E4A414B9D9CF /* Pods_Snapchat.framework */; };
 /* End PBXBuildFile section */
@@ -35,8 +40,13 @@
 		636D1E3C20ACD597007C8234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		636D1E3F20ACD597007C8234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		636D1E4120ACD597007C8234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63AB483F20D1B480004A5036 /* EsucharSnapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsucharSnapController.swift; sourceTree = "<group>"; };
+		63AB484220D1F6A1004A5036 /* CeldaUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaUsuario.swift; sourceTree = "<group>"; };
 		63BF910C20BF6E5900125E47 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		63BF910E20BF75CF00125E47 /* VerSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerSnapViewController.swift; sourceTree = "<group>"; };
+		63DD08EF20C885E200E8063B /* Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
+		63DD08F120C887F200E8063B /* PopUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpController.swift; sourceTree = "<group>"; };
+		63DD08F320C8944500E8063B /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 		63E55AAA20BF4716000F7F5A /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		83BD0BB2C546E4A414B9D9CF /* Pods_Snapchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6F482506A0A0CF94442F69 /* Pods-Snapchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +94,8 @@
 		636D1E3420ACD597007C8234 /* Snapchat */ = {
 			isa = PBXGroup;
 			children = (
+				63AB484120D1F630004A5036 /* Vistas */,
+				63DD08EC20C8845D00E8063B /* Utils */,
 				63E55AA920BF46FA000F7F5A /* Modelos */,
 				63E55AA820BF46AD000F7F5A /* ViewControllers */,
 				633A05F520ACF9D100847D55 /* GoogleService-Info.plist */,
@@ -97,6 +109,22 @@
 			path = Snapchat;
 			sourceTree = "<group>";
 		};
+		63AB484120D1F630004A5036 /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				63AB484220D1F6A1004A5036 /* CeldaUsuario.swift */,
+			);
+			path = Vistas;
+			sourceTree = "<group>";
+		};
+		63DD08EC20C8845D00E8063B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				63DD08EF20C885E200E8063B /* Border.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		63E55AA820BF46AD000F7F5A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +133,9 @@
 				636D1E3720ACD597007C8234 /* iniciarSesionViewController.swift */,
 				633A05F920AD021400847D55 /* ImagenViewController.swift */,
 				63BF910E20BF75CF00125E47 /* VerSnapViewController.swift */,
+				63DD08F120C887F200E8063B /* PopUpController.swift */,
+				63DD08F320C8944500E8063B /* AudioViewController.swift */,
+				63AB483F20D1B480004A5036 /* EsucharSnapController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -255,12 +286,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				636D1E3820ACD597007C8234 /* iniciarSesionViewController.swift in Sources */,
+				63AB484320D1F6A1004A5036 /* CeldaUsuario.swift in Sources */,
+				63DD08F020C885E200E8063B /* Border.swift in Sources */,
 				633A05FA20AD021400847D55 /* ImagenViewController.swift in Sources */,
+				63AB484020D1B480004A5036 /* EsucharSnapController.swift in Sources */,
 				63E55AAB20BF4716000F7F5A /* Usuario.swift in Sources */,
 				636D1E3620ACD597007C8234 /* AppDelegate.swift in Sources */,
 				63BF910F20BF75CF00125E47 /* VerSnapViewController.swift in Sources */,
 				63BF910D20BF6E5900125E47 /* Snap.swift in Sources */,
 				633A05F820ACFB3300847D55 /* SnapsViewController.swift in Sources */,
+				63DD08F420C8944500E8063B /* AudioViewController.swift in Sources */,
+				63DD08F220C887F200E8063B /* PopUpController.swift in Sources */,
 				633A05FC20AD146600847D55 /* ElegirUsuarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

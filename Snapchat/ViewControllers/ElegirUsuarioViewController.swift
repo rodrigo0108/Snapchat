@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import FirebaseAuth
 
 class ElegirUsuarioViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
@@ -18,6 +19,8 @@ class ElegirUsuarioViewController: UIViewController, UITableViewDataSource, UITa
     var imagenURL = ""
     var descrip = ""
     var imagenID = ""
+    var audioURL = ""
+    var audioID = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,9 +46,13 @@ class ElegirUsuarioViewController: UIViewController, UITableViewDataSource, UITa
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let usuario = usuarios[indexPath.row]
-        let snap = ["from": usuario.email, "descripcion":descrip, "imagenURL":imagenURL, "imagenID": imagenID]
-        Database.database().reference().child("usuarios").child(usuario.uid).child("snaps").childByAutoId().setValue(snap)
+        if audioURL==""{
+            let snap = ["from": Auth.auth().currentUser!.email!, "descripcion":descrip, "imagenURL":imagenURL, "imagenID": imagenID]
+            Database.database().reference().child("usuarios").child(usuario.uid).child("snaps").childByAutoId().setValue(snap)
+        }else{
+            let snap = ["from": Auth.auth().currentUser!.email!, "audioURL":audioURL, "audioID": audioID]
+            Database.database().reference().child("usuarios").child(usuario.uid).child("snaps").childByAutoId().setValue(snap)
+        }
         navigationController?.popToRootViewController(animated: true)
     }
-
 }
